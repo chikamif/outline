@@ -44,7 +44,7 @@ class DocumentEditor extends React.Component<Props> {
   };
 
   handleTitleKeyDown = (event: SyntheticKeyboardEvent<>) => {
-    if (event.key === "Enter" || event.key === "Tab") {
+    if (event.keycode === 13 || event.key === "Tab") {
       event.preventDefault();
       this.focusAtStart();
     }
